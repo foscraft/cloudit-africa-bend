@@ -1,0 +1,7 @@
+openapi: 3.0.3
+info:
+  title: CloudIt Africa API
+  version: 0.0.1
+  description: API for CloudIt Africa interview, for user registration demo
+paths: {}
+components: {}
