@@ -1,0 +1,16 @@
+[report]
+omit =
+    */migrations/*
+    */site-packages/*
+    .venv/*
+    */manage.py
+    */permissions.py
+    */tests/*
+    */static/*
+    */api.py
+    */__init__.py
+    */wsgi.py
+    */asgi.py
+    */settings/*
+    */urls.py
+show_missing = True
