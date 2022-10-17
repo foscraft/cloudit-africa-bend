@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
     "drf_spectacular",
+    "corsheaders",
     # local apps
     "users",
 ]
@@ -49,6 +50,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = "core.urls"
@@ -124,6 +126,12 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # custom user
 AUTH_USER_MODEL = "users.User"
 
+# cors settings
+CORS_ORIGIN_ALLOW_ALL = False
+
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ORIGIN_WHITELIST = ("http://localhost:3000",)
 
 SPECTACULAR_SETTINGS = {
     "TITLE": "CloudIt Africa API",
