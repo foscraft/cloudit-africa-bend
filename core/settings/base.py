@@ -163,12 +163,7 @@ SIMPLE_JWT = {
     "UPDATE_LAST_LOGIN": False,
 }
 
-# # swagger settings
-# SWAGGER_SETTINGS = {
-#     "SECURITY_DEFINITIONS": {
-#         "Bearer": {"type": "apiKey", "name": "Authorization", "in": "header"}
-#     }
-# }
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # email
 SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
