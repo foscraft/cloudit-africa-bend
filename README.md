@@ -7,3 +7,17 @@ We would like you to develop a micro service that enables one to create a user, 
 Swagger UI for local server:  `http://127.0.0.1:8000/api/v1/schema/swagger-ui/`
 
 Swagger UI for production server:  `https://africa-cloudit-demo-bend.herokuapp.com/api/v1/schema/swagger-ui/`
+
+Register a user `http://127.0.0.1:8000/api/v1/users/`
+
+        {
+            "email":"tom@hmail.com",
+            "username":"tsusth",
+            "password":"Distance@205"
+        }
+
+Delete a user `http://127.0.0.1:8000/api/v1/users/{lookup_id}/`
+
+Update a user `http://127.0.0.1:8000/api/v1/users/{lookup_id}/`
+
+Login a user `http://127.0.0.1:8000/api/v1/auth/login/`
